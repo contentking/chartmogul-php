@@ -113,7 +113,7 @@ class Customer extends AbstractResource
             return null;
         }
 
-        return $response->first();
+        return $response->first() ?: NULL;
     }
 
     /**
